@@ -84,7 +84,7 @@ class Menu
             return $this;
         }
 
-        $this->location = $place;
+        $this->location = $itemMenu->place ?? $place;
         $this->arg = $arg;
         $this->sort = $arg['sort'];
 
